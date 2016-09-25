@@ -451,13 +451,24 @@ Param.val=-23.57647028634556107818
 AddParam
 
 Param.h.v.=002c0010
-AddParam
-
-Param.h.v.=002c0011
 Param.val=-0.00000000000000000000
 AddParam
 
+Param.h.v.=002c0011
+AddParam
+
 Param.h.v.=002c0012
+Param.val=3.00000000000000000000
+AddParam
+
+Param.h.v.=002d0010
+AddParam
+
+Param.h.v.=002d0011
+Param.val=-30.00000000000000000000
+AddParam
+
+Param.h.v.=002d0012
 Param.val=3.00000000000000000000
 AddParam
 
@@ -567,6 +578,12 @@ Request.construction=0
 AddRequest
 
 Request.h.v=0000002c
+Request.type=101
+Request.group.v=00000003
+Request.construction=1
+AddRequest
+
+Request.h.v=0000002d
 Request.type=101
 Request.group.v=00000003
 Request.construction=1
@@ -1045,7 +1062,15 @@ AddEntity
 Entity.h.v=002c0000
 Entity.type=2000
 Entity.construction=0
-Entity.actPoint.y=-0.00000000000000000000
+Entity.actPoint.x=-0.00000000000000000000
+Entity.actPoint.z=3.00000000000000000000
+Entity.actVisible=1
+AddEntity
+
+Entity.h.v=002d0000
+Entity.type=2000
+Entity.construction=0
+Entity.actPoint.y=-30.00000000000000000000
 Entity.actPoint.z=3.00000000000000000000
 Entity.actVisible=1
 AddEntity
@@ -2444,6 +2469,16 @@ Constraint.type=20
 Constraint.group.v=00000003
 Constraint.ptA.v=002c0000
 Constraint.ptB.v=80030006
+Constraint.other=0
+Constraint.other2=0
+Constraint.reference=0
+AddConstraint
+
+Constraint.h.v=00000046
+Constraint.type=20
+Constraint.group.v=00000003
+Constraint.ptA.v=002d0000
+Constraint.ptB.v=8003000f
 Constraint.other=0
 Constraint.other2=0
 Constraint.reference=0
